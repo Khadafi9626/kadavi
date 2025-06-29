@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transaksi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">☕ pemadam kehausan</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="profile-255.html">Profil</a>
+        <a href="menu-255.html">Menu</a>
+        <a href="transaksi-255.html" class="active">Transaksi</a>
+        <a href="login-255.html">Login</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section id="transaksi">
+      <center><h2>Transaksi</h2></center>
+      <form id="formTransaksi">
+        <input type="text" id="nama" placeholder="Nama Pelanggan" required>
+        <select id="kopi">
+          <option value="Espresso">luwak sty</option>
+          <option value="Latte">cappucino</option>
+          <option value="Cappuccino">goodday</option>
+        </select>
+        <input type="number" id="jumlah" placeholder="Jumlah" required>
+        <button type="submit">Tambah Transaksi</button>
+      </form>
+      <table>
+        <thead>
+          <tr><th>Nama</th><th>Jenis Kopi</th><th>Jumlah</th></tr>
+        </thead>
+        <tbody id="tabelTransaksi"></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 keren. khadafi</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
